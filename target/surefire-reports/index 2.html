@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,22 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="SerializeNDeSerializeComplexJsonTest" class="method navigator-link" hash-for-method="TestDeSerializeFromFileRead">TestDeSerializeFromFileRead</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="SerializeNDeSerializeJsonTest" class="method navigator-link" hash-for-method="TestDeSerialize">TestDeSerialize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="SerializeNDeSerializeJsonTest" class="method navigator-link" hash-for-method="TestDeSerializeFromFileRead">TestDeSerializeFromFileRead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="SerializeNDeSerializeJsonTest" class="method navigator-link" hash-for-method="TestSerialize">TestSerialize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="SerializeNDeSerializeJsonTest" class="method navigator-link" hash-for-method="TestSerializeAndFileWrite">TestSerializeAndFileWrite</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -120,14 +135,35 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">SerializeNDeSerializeComplexJsonTest</span>
+              <span class="class-name">SerializeNDeSerializeJsonTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestDeSerialize">
+                  </a> <!-- TestDeSerialize -->
+                  <span class="method-name">TestDeSerialize</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="TestDeSerializeFromFileRead">
                   </a> <!-- TestDeSerializeFromFileRead -->
                   <span class="method-name">TestDeSerializeFromFileRead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestSerialize">
+                  </a> <!-- TestSerialize -->
+                  <span class="method-name">TestSerialize</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestSerializeAndFileWrite">
+                  </a> <!-- TestSerializeAndFileWrite -->
+                  <span class="method-name">TestSerializeAndFileWrite</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,13 +178,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;4&quot; parallel=&quot;methods&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;4&quot; parallel=&quot;methods&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
-    &lt;method-selectors&gt;
-      &lt;method-selector&gt;
-        &lt;selector-class name=&quot;org.apache.maven.surefire.testng.utils.MethodSelector&quot; priority=&quot;10000&quot;/&gt;
-      &lt;/method-selector&gt;
-    &lt;/method-selectors&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;SerializeNDeSerializeComplexJsonTest&quot;/&gt;
+      &lt;class name=&quot;SerializeNDeSerializeJsonTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -188,16 +219,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestDeSerializeFromFileRead')
-data.setCell(0, 2, 'SerializeNDeSerializeComplexJsonTest')
-data.setCell(0, 3, 3);
+data.setCell(0, 1, 'TestSerializeAndFileWrite')
+data.setCell(0, 2, 'SerializeNDeSerializeJsonTest')
+data.setCell(0, 3, 107);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestDeSerialize')
+data.setCell(1, 2, 'SerializeNDeSerializeJsonTest')
+data.setCell(1, 3, 2);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestDeSerializeFromFileRead')
+data.setCell(2, 2, 'SerializeNDeSerializeJsonTest')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TestSerialize')
+data.setCell(3, 2, 'SerializeNDeSerializeJsonTest')
+data.setCell(3, 3, 2);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 ms</span>
+              <span class="suite-total-time">Total running time: 113 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -212,20 +255,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">SerializeNDeSerializeComplexJsonTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TestSerializeAndFileWrite</span>
-                <br/>
-                <span class="ignored-method-name">TestSerialize</span>
-                <br/>
-                <span class="ignored-method-name">TestDeSerialize</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Surefire_suite" class="panel">
@@ -234,14 +266,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">SerializeNDeSerializeComplexJsonTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">SerializeNDeSerializeJsonTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">SerializeNDeserialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <span class="method-name">TestSerializeAndFileWrite</span>
+                <span class="method-start">231 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestDeSerialize</span>
+                <span class="method-start">232 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">TestDeSerializeFromFileRead</span>
-                <span class="method-start">246 ms</span>
+                <span class="method-start">232 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TestSerialize</span>
+                <span class="method-start">232 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
